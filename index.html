@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Tip calculator app</title>
+  <!-- cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normilize -->
+  <link rel="stylesheet" href="./normilize/normilize.css">
+ 
+  <!-- link css -->
+  <link rel="stylesheet" href="./style.css" class="css">
+  
+</head>
+<body>
+  
+  <!-- title section -->
+  <h1 class="title">SPLI<br>TTER</h1>
+
+<!-- section -->
+<main class="main">
+  <!-- left-container -->
+  <div class="left-container">
+    <div class="form-control">
+      <label for="bill" class="title">Bill</label>
+      <i class="fa-solid fa-dollar-sign"></i>
+      <input type="number" name="bill" class="bill-2 sec-1" id="bill">
+    </div>
+    <div class="form-control">
+      <h2 class="title">Select Tip%</h2>
+      <div class="tips-container">
+        <input
+          type="button"
+          name="tip-percent"
+          class="tip-percent"
+          value="5"
+        />
+        <input
+          type="button"
+          name="tip-percent"
+          class="tip-percent"
+          value="10"
+        />
+        <input
+          type="button"
+          name="tip-percent"
+          class="tip-percent tip-1"
+          value="15"
+        />
+        <input
+          type="button"
+          name="tip-percent"
+          class="tip-percent"
+          value="25"
+        />
+        <input
+          type="button"
+          name="tip-percent"
+          class="tip-percent"
+          value="50"
+        />
+
+        <input
+          type="number"
+          placeholder="Custom"
+          class="custom-tip tip-2"
+          id="custom-tip"
+        />
+      </div>
+    </div>
+    <div class="form-control">
+      <label for="bill" class="title">Number of People</label>
+      <i class="fa-solid fa-id-badge"></i>
+      <input type="number" name="bill" class="bill-4 sec-1" id="people">
+    </div>
+  </div>
+  
+  <!-- right-container -->
+  <div class="right-container">
+    <div class="form-control-1">
+      <div class="title-1">
+        <p class="left-1">Tip Amount<span class="person"><br>/ Person</span></p>
+        <p class="right-1" id="amount">$ 0.00</p>
+      </div>
+      <div class="title-2">
+        <p class="left-1">Total<span class="person"><br>/ Person</span></p>
+        <p class="right-1" id="total">$0.00</p>
+      </div>
+      <button class="btn-reset" id="btn-reset">RESET</button>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+  <!-- js -->
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
